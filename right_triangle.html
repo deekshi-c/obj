@@ -1,0 +1,35 @@
+<script>
+    /*function sq(p){
+            return p**2;
+    }
+*/
+    function comp(x,y,z){
+            if(x>y && x>z) py(x,y,z);
+            else if( y > z)  py(y,x,z);
+            else py(z,x,y);
+            }
+
+
+    function py(a,b,c){
+        r=b+c;
+        alert(a+" "+b+" "+c+" ");
+        if (r==a) alert(" Right angled Trinangle ");
+        else alert( "Not a right angled Triangle "); 
+    }
+
+    let sq = (a)=> {
+        a**2;
+    }
+    
+    let x1 = +prompt("Enter the X1 cordinate ",0);
+    let y1 = +prompt("Enter the Y1 cordinate ",0);
+    let x2 = +prompt("Enter the X2 cordinate ",0);
+    let y2 = +prompt("Enter the Y2 cordinate ",0);
+    let x3 = +prompt("Enter the X3 cordinate ",0);
+    let y3 = +prompt("Enter the Y3 cordinate ",0);
+    let x = sq(x1-x2)+sq(y2-y1);
+    let y = sq(x3-x2)+sq(y2-y3);
+    let z = sq(x3-x1)+sq(y3-y1);
+    comp(x,y,z)
+
+</script>

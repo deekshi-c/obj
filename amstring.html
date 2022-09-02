@@ -1,0 +1,26 @@
+<script>
+function cham(a,b){
+    let c=a;
+    let r;
+    let sum=0;
+    while(a>0) {
+        r=a%10;
+        sum=sum+r**b;
+        a=Math.trunc(a/10);
+        alert(sum);
+
+    }
+
+    alert(sum);
+    alert(a);
+    if(sum==c) return "Right";
+    else return "Wrong";
+}
+
+
+
+let a=prompt("Enter number");
+let len=a.length;
+alert("Is an amstrong :"+cham(+a,len));
+ 
+</script>

@@ -1,0 +1,36 @@
+<script>
+    function dam(a,b){
+        if(a==2) return (leap(b));
+        else if(a<=8){
+                if(a%2==1||a==8) return "31";
+                else return "30";     
+            }
+            else {
+                if(a%2==0) return "31";
+                else return "30";    
+
+            }
+        }
+
+    function leap(b){
+        if(b%4==0){
+            if(b%100==0){
+                if(b%400==0) return "29";
+                else return "28"
+            }
+            else return "29";
+        }
+        else return "28"
+
+    }
+    x=1
+    do{
+    let a=+prompt("Enter month (MM)");
+    if(a>12){
+        alert("Invalid Month");
+        continue;
+    }
+    let b=+prompt("Enter Year");
+    alert(dam(a,b));
+    }while(x==1);
+</script>

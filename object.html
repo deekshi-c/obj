@@ -1,0 +1,14 @@
+<script>
+    let user={};
+    user.name="john";
+    alert(user.name);
+    user.surname="Smith";
+    alert(user.surname);
+    user.name="Pete";
+    for(key in user)
+        alert(key+"-"+user[key]);
+    delete user.name;
+    for(key in user)
+        alert(key+"-"+user[key]);
+    delete user.name;
+</script>

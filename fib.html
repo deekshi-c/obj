@@ -1,0 +1,26 @@
+<script>
+    function fib(a){
+        let b=1;
+        let c=0;
+        let d="";
+        if(a==1) alert(0);
+        else if(a==2) alert("0 1");
+        else{
+            d=d+c+" ";
+            d=d+b+" ";
+            for(let i=2;i<a;i++){
+                r=(b+c);
+                d=d+r+" ";
+                c=b;
+                b=r;
+                
+                
+            }
+            alert(d);
+        }
+
+    }
+    let a=+prompt("Enter the value");
+    fib(a);
+
+</script>

@@ -1,0 +1,14 @@
+<script>
+    function fact(b){
+        let sum=1;
+        if(b==0) return 1;
+        else { 
+            for(;b>0;b--)
+                sum*=b;
+            return sum;
+
+        }
+    }
+    let a=+prompt("Enter number");
+    alert(fact(a));
+</script>

@@ -1,0 +1,9 @@
+<script>
+    function con(b){
+        let c = prompt("Enter 1 for C to F & w for Faren to Celcius",1);
+        if(c==1) return Math.round(((b*9/5)+32)*10)/10;
+        else return Math.round(((b-32)*5/9)*10)/10;
+    }
+    let a=+prompt("Enter temperature");
+    alert(con(a));
+</script>
